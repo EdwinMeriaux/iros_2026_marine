@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Perception and Navigation for Marine Robotics - IROS 2026 Workshop. Bridging Robotics, Industry, and Ocean Science.">
+  <title>Perception and Navigation for Marine Robotics - IROS 2026</title>
+<!-- Wave Emoji Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪸</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css?v=16">
+</head>
+
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="#" class="logo-text">Marine Robotics @ IROS 2026</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#call-for-papers">Call for Papers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/banners/cover.jpg" alt="Underwater Marine Robotics Background Cover Image">
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">IROS 2026 Workshop</p>
+      <h1 class="hero-title">Perception and Navigation for<br>Marine Robotics</h1>
+      <p class="hero-subtitle">Innovations in Marine Robotics: Bridging Robotics, Industry, and Ocean Science</p>
+      <div class="hero-details">
+        <span>Date: October 1, 2026</span>
+        <span>Room: 325</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Joint Workshop Banner -->
+  <section class="joint-banner">
+    <div class="joint-banner-inner">
+      <h2 class="joint-banner-title">Held Jointly with the AQ<sup>2</sup>UASIM Workshop</h2>
+      <p class="joint-banner-text">
+        The two workshops will be held together as a single, combined event, giving presenters one
+        unified audience and the widest possible reach. Each workshop still maintains its own independent
+        paper review and acceptance process.
+      </p>
+      <a href="https://sites.google.com/view/aquasim-v2/home" target="_blank" rel="noopener noreferrer" class="joint-banner-link">
+        Visit the AQ<sup>2</sup>UASIM Workshop ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- Overview Section -->
+    <section id="overview" style="margin-bottom: 5rem;">
+      <h2 class="section-title">Workshop Overview</h2>
+      
+      <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.5rem; margin-bottom: 2rem;">
+        <p style="flex: 1; min-width: 280px; margin: 0; font-size: 1.1rem; color: var(--text-light); text-align: left;">
+          Marine robotics operates in environments that break the assumptions behind standard perception and
+          navigation pipelines, from sudden turbidity and GPS-denied conditions to constant current perturbations.
+          This workshop brings together researchers to discuss resilient sensing, state estimation, and mapping
+          methods, grounded in a real-world challenge through an invited talk from a marine biologist on coral reef
+          conservation.
+        </p>
+        <a href="https://2026.ieee-iros.org/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+          <img src="assets/logos/iros_logo.png" alt="IROS 2026 Conference Logo" style="max-height: 100px; width: auto; object-fit: contain;">
+        </a>
+      </div>
+
+      <div class="overview-responsive-container">
+        
+        <div class="overview-text-column">
+          
+          <div class="overview-card">
+            <h3>GPS-Denied Operations</h3>
+            <p>Marine robots must operate without GPS, under constant current and wave perturbations, with
+              intermittent communication that limits remote supervision and correction. Localization and navigation
+              pipelines must contend with persistent drift and the difficulty of obtaining reliable ground truth over
+              long-duration missions.</p>
+          </div>
+          
+          <div class="overview-img-container mobile-only-interleave-img">
+            <img src="assets/images/curee.png" alt="CUREE autonomous underwater vehicle surveying a coral reef" style="width: 100%; height: auto; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid #e2e8f0; aspect-ratio: 16/9;">
+          </div>
+
+          <div class="overview-card">
+            <h3>Ocean Autonomy & SLAM</h3>
+            <p>Robust ocean autonomy requires multimodal sensing and fusion across vision, sonar, inertial, and
+              acoustic positioning; mapping and SLAM tailored to low-visibility and dynamic environments; and
+              planning methods that explicitly account for uncertainty, drift, and sensing dropouts.</p>
+          </div>
+          
+          <div class="overview-img-container mobile-only-interleave-img">
+            <img src="assets/images/aqua2.webp" alt="Aqua2 autonomous underwater robot exploring a ship" style="width: 100%; height: auto; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid #e2e8f0; aspect-ratio: 16/9;">
+          </div>
+
+          <div class="overview-card">
+            <h3>Bridging Science & Conservation</h3>
+            <p>A unique aspect of this workshop is its grounding in a concrete, real-world mission: an invited talk
+              from a marine biologist will share the on-the-ground challenges of coral reef conservation, giving
+              marine robotics researchers a common reference point to align their technical work with genuine
+              conservation needs.</p>
+          </div>
+        </div>
+        
+        <div class="overview-gallery-column">
+          <div class="overview-img-container">
+            <img src="assets/images/curee.png" alt="CUREE autonomous underwater vehicle surveying a coral reef" style="object-position: center;">
+          </div>
+          <div class="overview-img-container">
+            <img src="assets/images/aqua2.webp" alt="Aqua2 autonomous underwater robot exploring a ship" style="object-position: center;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" style="margin-bottom: 5rem;">
+      <h2 class="section-title">Featured Speakers</h2>
+      <div class="speakers-grid">
+        <!-- John Leonard -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar"><img src="people/John.png" alt="John Leonard" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="speaker-meta">
+              <h3>John Leonard</h3>
+              <p class="speaker-affiliation">Massachusetts Institute of Technology</p>
+              <a href="https://marinerobotics.mit.edu/" target="_blank" rel="noopener noreferrer">Website &rarr;</a>
+            </div>
+          </div>
+          <p class="speaker-bio">Professor of Mechanical and Ocean Engineering at MIT and CSAIL member who leads the Marine Robotics Group, specializing in navigation and mapping for autonomous underwater and terrestrial robots.</p>
+        </div>
+        <!-- Gregory Dudek -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar"><img src="people/greg.png" alt="Gregory Dudek" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="speaker-meta">
+              <h3>Gregory Dudek</h3>
+              <p class="speaker-affiliation">McGill University</p>
+              <a href="https://cim.mcgill.ca/~mrl/" target="_blank" rel="noopener noreferrer">Website &rarr;</a>
+            </div>
+          </div>
+          <p class="speaker-bio">Distinguished James McGill Professor of Computer Science who leads the Mobile Robotics Lab, known for marine field robotics including the amphibious Aqua robot for coral reef monitoring.</p>
+        </div>
+        <!-- Katherine Skinner -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar"><img src="people/katherine.png" alt="Katherine Skinner" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="speaker-meta">
+              <h3>Katherine Skinner</h3>
+              <p class="speaker-affiliation">Stony Brook University</p>
+              <a href="https://fieldrobotics.engin.umich.edu/" target="_blank" rel="noopener noreferrer">Website &rarr;</a>
+            </div>
+          </div>
+          <p class="speaker-bio">Associate Professor of Mechanical Engineering whose research spans perception, computer vision, and machine learning for field robotics across air, land, sea, and space.</p>
+        </div>
+        <!-- Lauren Olinger -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar"><img src="people/Lauren.png" alt="Lauren Olinger" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="speaker-meta">
+              <h3>Lauren Olinger</h3>
+              <p class="speaker-affiliation">University of the Virgin Islands</p>
+              <a href="https://vicarlab.org/" target="_blank" rel="noopener noreferrer">Website &rarr;</a>
+            </div>
+          </div>
+          <p class="speaker-bio">Coral reef ecologist who directs UVI's Virgin Islands Center for Autonomous Research, using underwater robotics, 3D imaging, and AI to monitor reef health and marine ecosystems.</p>
+        </div>
+        <!-- Seth Mccammon -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar"><img src="people/seth.png" alt="Seth Mccammon" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="speaker-meta">
+              <h3>Seth McCammon</h3>
+              <p class="speaker-affiliation">Woods Hole Oceanographic Institution</p>
+              <a href="https://www2.whoi.edu/staff/smccammon/" target="_blank" rel="noopener noreferrer">Website &rarr;</a>
+            </div>
+          </div>
+          <p class="speaker-bio">Marine roboticist at WHOI developing autonomy and active sensing methods, using AUVs and passive acoustics to map complex coral reef ecosystems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call for Papers Section -->
+    <section id="call-for-papers" style="margin-bottom: 5rem;">
+      <h2 class="section-title">Call for Papers</h2>
+
+      <!-- Submission Status Card -->
+      <section id="submission-overview" style="margin-bottom: 4rem;">
+        <div class="card" style="border-left: 4px solid var(--accent-blue); background: #f8fafc; padding: 2rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-navy);">Submissions Closed</h3>
+          <p style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-dark);">
+            Submissions for the workshop are now closed. We thank all authors for their contributions.
+          </p>
+          <p style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-dark);">
+            Accepted authors are invited to present a poster and a lightning talk during the workshop.
+          </p>
+          <a class="btn-primary" href="https://openreview.net/group?id=IEEE.org/IROS/2026/Workshop/WPNMR#tab-accept-poster" target="_blank" rel="noopener noreferrer">View accepted papers on OpenReview ↗</a>
+          <p style="font-size: 1rem; margin: 1.5rem 0 0; color: var(--text-light);">
+            <strong>Submission deadline:</strong> September 1, 2026 (closed)
+          </p>
+        </div>
+      </section>
+
+      <div class="topics-grid">
+        <div class="topic-item">
+          <div class="topic-icon">⚓</div>
+          <div class="topic-content">
+            <h3>GPS-Denied Localization</h3>
+            <p>Robust state estimation, acoustic positioning, and inertial navigation under persistent drift from
+              currents and waves.</p>
+          </div>
+        </div>
+        <div class="topic-item">
+          <div class="topic-icon">👁️</div>
+          <div class="topic-content">
+            <h3>Low-Visibility SLAM</h3>
+            <p>Simultaneous localization and mapping in turbid, dark, or otherwise unstructured underwater
+              environments.</p>
+          </div>
+        </div>
+        <div class="topic-item">
+          <div class="topic-icon">📡</div>
+          <div class="topic-content">
+            <h3>Multimodal Sensing & Fusion</h3>
+            <p>Cooperative integration of vision, sonar, inertial, acoustic positioning, and GNSS (when available)
+              for resilient perception.</p>
+          </div>
+        </div>
+        <div class="topic-item">
+          <div class="topic-icon">🪸</div>
+          <div class="topic-content">
+            <h3>Mapping & 3D Reconstruction</h3>
+            <p>Large-scale, multi-session mapping and structure-from-motion for dynamic, low-visibility environments
+              such as coral reefs.</p>
+          </div>
+        </div>
+        <div class="topic-item">
+          <div class="topic-icon">🧠</div>
+          <div class="topic-content">
+            <h3>Marine Robotics Autonomy</h3>
+            <p>Learning-based autonomy and decision-making, including deep learning models for sonar denoising,
+              underwater image restoration, and semantic segmentation.</p>
+          </div>
+        </div>
+        <div class="topic-item">
+          <div class="topic-icon">🗺️</div>
+          <div class="topic-content">
+            <h3>Planning Under Uncertainty</h3>
+            <p>Navigation and planning methods that explicitly account for uncertainty, drift, and sensing
+              dropouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section">
+      <h2 class="section-title">Workshop Schedule</h2>
+      <p class="schedule-intro">Thursday, October 1, 2026 · 8:30 AM–5:25 PM · <strong>Room 325</strong></p>
+      <div class="schedule-grid">
+        <div class="schedule-panel">
+          <div class="schedule-panel-heading">
+            <h3>Morning</h3>
+            <span>8:30 AM–12:30 PM</span>
+          </div>
+          <ol class="schedule-list">
+            <li class="schedule-item schedule-item--talk">
+              <div class="schedule-clock"><time datetime="2026-10-01T08:30">8:30 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T09:05">9:05 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Talk</span>
+                <h4>Seth McCammon</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--talk">
+              <div class="schedule-clock"><time datetime="2026-10-01T09:05">9:05 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T09:40">9:40 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Talk</span>
+                <h4>Katherine Skinner</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--spotlight">
+              <div class="schedule-clock"><time datetime="2026-10-01T09:40">9:40 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T10:10">10:10 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Lightning talks</span>
+                <h4>Marine Robotics spotlight</h4>
+                <p>20 accepted Marine Robotics papers</p>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--special">
+              <div class="schedule-clock"><time datetime="2026-10-01T10:10">10:10 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T10:20">10:20 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Sponsor</span>
+                <h4>Sponsor talk</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--break">
+              <div class="schedule-clock"><time datetime="2026-10-01T10:20">10:20 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T10:45">10:45 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Break + posters</span>
+                <h4>Coffee break &amp; poster session</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--talk">
+              <div class="schedule-clock"><time datetime="2026-10-01T10:45">10:45 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T11:20">11:20 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Talk</span>
+                <h4>Lauren Olinger</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--talk">
+              <div class="schedule-clock"><time datetime="2026-10-01T11:20">11:20 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T11:55">11:55 AM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Talk</span>
+                <h4>Gregory Dudek</h4>
+              </div>
+            </li>
+            <li class="schedule-item schedule-item--talk">
+              <div class="schedule-clock"><time datetime="2026-10-01T11:55">11:55 AM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T12:30">12:30 PM</time></div>
+              <div class="schedule-content">
+                <span class="schedule-kind">Talk</span>
+                <h4>Malika Meghjani</h4>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="schedule-afternoon">
+          <div class="schedule-panel">
+            <div class="schedule-panel-heading">
+              <h3>Afternoon</h3>
+              <span>12:30–5:25 PM</span>
+            </div>
+            <ol class="schedule-list">
+              <li class="schedule-item schedule-item--break">
+                <div class="schedule-clock"><time datetime="2026-10-01T12:30">12:30 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T13:30">1:30 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Break</span>
+                  <h4>Lunch break</h4>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--special">
+                <div class="schedule-clock"><time datetime="2026-10-01T13:30">1:30 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T14:30">2:30 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Discussion</span>
+                  <h4>Panel discussion</h4>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--spotlight">
+                <div class="schedule-clock"><time datetime="2026-10-01T14:30">2:30 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T15:10">3:10 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Lightning talks</span>
+                  <h4>AQ²UASIM spotlight</h4>
+                  <p>16 accepted AQ²UASIM papers</p>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--break">
+                <div class="schedule-clock"><time datetime="2026-10-01T15:10">3:10 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T15:40">3:40 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Break + posters</span>
+                  <h4>Coffee break &amp; poster session</h4>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--talk">
+                <div class="schedule-clock"><time datetime="2026-10-01T15:40">3:40 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T16:15">4:15 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Talk</span>
+                  <h4>Scarlett Raine</h4>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--talk">
+                <div class="schedule-clock"><time datetime="2026-10-01T16:15">4:15 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T16:50">4:50 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Talk</span>
+                  <h4>Giancarlo Troni</h4>
+                </div>
+              </li>
+              <li class="schedule-item schedule-item--talk">
+                <div class="schedule-clock"><time datetime="2026-10-01T16:50">4:50 PM</time><span aria-hidden="true">–</span><time datetime="2026-10-01T17:25">5:25 PM</time></div>
+                <div class="schedule-content">
+                  <span class="schedule-kind">Talk</span>
+                  <h4>John Leonard</h4>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers">
+      <h2 class="section-title">Organizers</h2>
+      <div class="organizers-grid">
+
+        <!-- Kalvik Jakkala -->
+        <div class="organizer-card">
+          <a href="https://www.itskalvik.com/" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/kalvik_jakkala.png" alt="Kalvik Jakkala Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://www.itskalvik.com/" target="_blank" rel="noopener noreferrer">Kalvik Jakkala</a>
+            </h3>
+            <p class="organizer-affiliation">Texas A&M University</p>
+          </div>
+        </div>
+
+        <!-- Monika Roznere -->
+        <div class="organizer-card">
+          <a href="https://www.monikaroznere.com/" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/monika_roznere.png" alt="Monika Roznere Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://www.monikaroznere.com/" target="_blank" rel="noopener noreferrer">Monika Roznere</a>
+            </h3>
+            <p class="organizer-affiliation">Binghamton University</p>
+          </div>
+        </div>
+
+        <!-- Marios Xanthidis -->
+        <div class="organizer-card">
+          <a href="https://www.sintef.no/en/all-employees/employee/marios.xanthidis/" target="_blank"
+            rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/marios_xanthidis.png" alt="Marios Xanthidis Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://www.sintef.no/en/all-employees/employee/marios.xanthidis/" target="_blank"
+                rel="noopener noreferrer">Marios Xanthidis</a>
+            </h3>
+            <p class="organizer-affiliation">SINTEF Ocean</p>
+          </div>
+        </div>
+        
+        <!-- Jason O'Kane -->
+        <div class="organizer-card">
+          <a href="https://jokane.net/" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/jason_okane.png" alt="Jason O'Kane Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://jokane.net/" target="_blank" rel="noopener noreferrer">Jason O'Kane</a>
+            </h3>
+            <p class="organizer-affiliation">Texas A&M University</p>
+          </div>
+        </div>
+
+        <!-- Yogesh Girdhar -->
+        <div class="organizer-card">
+          <a href="https://warp.whoi.edu" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/yogesh_girdhar.png" alt="Yogesh Girdhar Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://warp.whoi.edu" target="_blank" rel="noopener noreferrer">Yogesh Girdhar</a>
+            </h3>
+            <p class="organizer-affiliation">WHOI</p>
+          </div>
+        </div>
+
+        <!-- Alberto Quattrini Li -->
+        <div class="organizer-card">
+          <a href="https://rlab.cs.dartmouth.edu/albertoq/" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/alberto_quattrini_li.png" alt="Alberto Quattrini Li Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://rlab.cs.dartmouth.edu/albertoq/" target="_blank" rel="noopener noreferrer">Alberto
+                Quattrini Li</a>
+            </h3>
+            <p class="organizer-affiliation">Dartmouth College</p>
+          </div>
+        </div>
+
+        <!-- Edwin Meriaux -->
+        <div class="organizer-card">
+          <a href="https://EdwinMeriaux.github.io" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/edwin_meriaux.png" alt="Edwin Meriaux Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://EdwinMeriaux.github.io" target="_blank" rel="noopener noreferrer">Edwin Meriaux</a>
+            </h3>
+            <p class="organizer-affiliation">McGill University</p>
+          </div>
+        </div>
+
+        <!-- Steve Wen -->
+        <div class="organizer-card">
+          <a href="https://stevvwen.github.io/" target="_blank" rel="noopener noreferrer">
+            <div class="organizer-photo">
+              <img src="assets/organizers/steve_wen.png" alt="Steve Wen Profile Photo">
+            </div>
+          </a>
+          <div class="organizer-info">
+            <h3 class="organizer-name">
+              <a href="https://stevvwen.github.io/" target="_blank" rel="noopener noreferrer">Steve Wen</a>
+            </h3>
+            <p class="organizer-affiliation">McGill University</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Organizing Institutes Footer Grid -->
+  <section class="institutes-section">
+    <div class="container" style="padding: 0;">
+      <h2 class="section-title">Organizing Institutes</h2>
+      <div class="logo-grid">
+        <div class="logo-item" title="Woods Hole Oceanographic Institution">
+          <a href="https://www.whoi.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/whoi.png" alt="Woods Hole Oceanographic Institution Logo">
+          </a>
+        </div>
+        <div class="logo-item" title="Binghamton University">
+          <a href="https://www.binghamton.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/binghamton.png" alt="Binghamton University Logo">
+          </a>
+        </div>
+        <div class="logo-item" title="Texas A&M University">
+          <a href="https://www.tamu.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/texas_am.png" alt="Texas A&M University Logo">
+          </a>
+        </div>
+        <div class="logo-item" title="Dartmouth College">
+          <a href="https://www.dartmouth.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/dartmouth.png" alt="Dartmouth College Logo">
+          </a>
+        </div>
+        <div class="logo-item" title="SINTEF Ocean">
+          <a href="https://www.sintef.no/en/ocean/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/sintef.png" alt="SINTEF Ocean Logo">
+          </a>
+        </div>
+        <div class="logo-item" title="McGill University">
+          <a href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logos/mcgill.png" alt="McGill University Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
